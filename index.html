@@ -1,65 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人博客</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>我的博客主页</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav>
-        <div class="logo">
-            <img src="images/avatar.jpg" alt="头像">
-            <h1>我的博客</h1>
-        </div>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="about.html">关于我</a></li>
-            <li><a href="#posts">文章</a></li>
-            <li><a href="contact.html">联系我</a></li>
-        </ul>
-    </nav>
-
-    <!-- 横幅 -->
-    <header>
-        <h2>欢迎来到我的个人博客</h2>
-        <p>分享我的学习、生活和思考</p>
-    </header>
-
-    <!-- 文章列表 -->
-    <section id="posts">
-        <h3>最新文章</h3>
-        <div class="post-list">
-            <!-- 文章卡片1 -->
-            <div class="post-card">
-                <img src="images/post1.jpg" alt="文章封面">
-                <h4>我的第一篇博客</h4>
-                <p>发布于 2023-10-15</p>
-                <a href="posts/post1.html">阅读更多</a>
-            </div>
-            <!-- 文章卡片2 -->
-            <div class="post-card">
-                <img src="images/post2.jpg" alt="文章封面">
-                <h4>学习HTML的心得</h4>
-                <p>发布于 2023-10-20</p>
-                <a href="posts/post2.html">阅读更多</a>
-            </div>
-            <!-- 文章卡片3 -->
-            <div class="post-card">
-                <img src="images/post3.jpg" alt="文章封面">
-                <h4>CSS布局技巧</h4>
-                <p>发布于 2023-10-25</p>
-                <a href="posts/post3.html">阅读更多</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        <p>&copy; 2023 我的个人博客. 保留所有权利.</p>
-    </footer>
-
-    <script src="js/main.js"></script>
+	<div class="blog-container">
+		<!-- 侧边栏 -->
+		<aside class="sidebar">
+			<div class="sidebar-header">
+				<img src="images/avatar.jpg" alt="头像" class="sidebar-avatar">
+				<span class="sidebar-title">我的博客</span>
+			</div>
+			<nav class="sidebar-nav">
+				<ul>
+					<li><a href="#" class="active">我“晒”</a></li>
+					<li><a href="#">我“推”</a></li>
+					<li><a href="#">我“成”</a></li>
+					<li><a href="#">我“晒”</a></li>
+					<li><a href="#">我“知”</a></li>
+                    <li><a href="#">你“想”</a></li>
+				</ul>
+			</nav>
+			<div class="sidebar-footer">
+				<div>关于我</div>
+				<div>
+                    我的简历
+                </div>
+				<div>我的社区</div>
+				<div>我的荣誉</div>
+		</aside>
+		<!-- 主体区 -->
+		<main class="main-area">
+			<!-- 顶部横幅 -->
+			<section class="banner">
+				<div class="banner-user">
+                    <span class="motto">座右铭</span>
+					<img src="images/avatar.jpg" alt="头像" class="banner-avatar">
+					<span class="banner-nickname">我的昵称</span>
+				</div>
+			</section>
+			<!-- 内容区骨架 -->
+			<section class="content-area">
+				<!-- 这里预留后续内容填充 -->
+			</section>
+		</main>
+	</div>
 </body>
 </html>
